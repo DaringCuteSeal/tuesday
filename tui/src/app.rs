@@ -115,7 +115,7 @@ impl App {
                         ActiveNodeOperation::AddPseudoToParent => {
                             self.components
                                 .graph_view
-                                .add_node_to_active(self.components.cmdline.get_curr_input(), true);
+                                .add_node_to_parent(self.components.cmdline.get_curr_input(), true);
                             return STOP_CAPTURING_KEY;
                         }
                         ActiveNodeOperation::AddPseudoToActive => {
